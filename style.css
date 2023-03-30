@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    background: #b9bfc5;
+    font-weight: 00;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+  background: #061f8f;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #f3ebeb;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #f5ededfd;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../pictures/rocket.jpg") top center;
+  background-size: cover;
+}
+
+#hero2 {
+  width: 100%;
+  height: 100vh;
+  background: url("../pictures/space.jpg") top center;
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #4f64e0;
+}
+
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #2e13c7;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #0b97d8;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.right { text-align: right;}
+.center { text-align: center;}
+.color1{color: #061f8f;}
+.color2{color: #9380fc;}
+
+.round1 {
+  border: 2px solid blue;
+  border-radius: 12px;
+  padding: 5px;
+  text-align: left;
+  margin-left: 45%;
+}
+
+.round1a {
+  border: 2px solid blue;
+  border-radius: 13px;
+  padding: 5px;
+  text-align: left;
+
+}
+
+.round2 {
+  border: 2px solid blue;
+  border-radius: 12px;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+
+.round3 {
+  border: 2px solid blue;
+  border-radius: 12px;
+  padding: 5px;
+  text-align: right;
+}
+
