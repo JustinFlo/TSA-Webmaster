@@ -149,8 +149,8 @@ nav a:hover::before {
 
 .round1 {
   border: 2px solid blue;
-  border-radius: 12px;
-  padding: 5px;
+  border-radius: 16px;
+  padding: 0px;
   text-align: left;
   margin-left: 45%;
 }
